@@ -1,4 +1,4 @@
-konne: Korean Nested Named Entity
+konne: Korean Nested Named Entity Corpus
 
 # 한국어 중첩 개체명 말뭉치
 
@@ -50,6 +50,7 @@ konne: Korean Nested Named Entity
 말뭉치 파일 형식은 doccano에서 제공하는 것과 동일한 JSONL을 이용하였다.
 한 행에 한 문장에 관한 정보를 제공하고 있으며 `text`이 원시 문장 형태,
 `label`에 개체명 표지의 정보를 `[begin, end, label]`의 배열로 제공한다.
+예시하면 다음과 같다.
 
 ```jsonl
 {"id": 20488, "klue_id": "klue-ner-v1_train_20487_wikitree", "text": "남편은 '정보 비대칭 이론'의 창시자로 불리는 2001년 노벨경제학상 수상자 조지 애커로프 교수다.", "label": [[0, 2, "CV_RELATION"], [5, 14, "TR_SCIENCE"], [26, 31, "DT_YEAR"], [26, 38, "CV_PRIZE"], [26, 42, "CV_POSITION"], [26, 53, "PS_NAME"], [32, 34, "PS_NAME"], [32, 38, "CV_PRIZE"], [34, 37, "FD_SOCIAL_SCIENCE"], [39, 42, "CV_POSITION"], [43, 50, "PS_NAME"], [43, 53, "PS_NAME"], [51, 53, "CV_OCCUPATION"]]}
