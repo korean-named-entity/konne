@@ -6,6 +6,15 @@ konne: Korean Nested Named Entity Corpus
 전체 원시 문장에서 개체명의 중첩 구조를 분석하고 150개 세분류 개체명 표지를 부착한
 말뭉치이다.
 
+* [개요](#개요)
+  * [규모](#규모)
+  * [원천 자료](#원천-자료)
+  * [주석 도구와 말뭉치 파일 형식](#주석-도구와-말뭉치-파일-형식)
+  * [태그셋과 가이드라인](#태그셋과-가이드라인)
+* [통계](#통계)
+* [참고문헌](#참고문헌)
+
+
 ## 개요
 
 ### 규모 
@@ -64,8 +73,12 @@ konne: Korean Nested Named Entity Corpus
 국립국어원의 150개 세부분류 개체명 태그셋과 지침을 기준으로 주석하였다.
 태그셋은 다음 파일에서 확인할 수 있다.
 
-- [NIKL_NE_2021_TAGSET_150.tsv](tagset_and_guideline/NIKL_NE_2021_TAGSET_150.tsv)
-- [NIKL_NE_2021_TAGSET_150.json](tagset_and_guideline/NIKL_NE_2021_TAGSET_150.json)
+- [NIKL_NE_2021_TAGSET_150.tsv](docs/tagset/NIKL_NE_2021_TAGSET_150.tsv)
+- [NIKL_NE_2021_TAGSET_150.json](docs/tagset/NIKL_NE_2021_TAGSET_150.json)
+
+주석 작업 지침은 다음에서 확인할 수 있다.
+
+- [한국어 중첩 개체명 말뭉치 작업자 지침](https://docs.google.com/document/d/1eAbxf7fNvjv9FkwC8-jMkOgIBEERmMGw)
 
 태그셋 및 지침과 관련한 정보는 다음 문서에서 확인할 수 있다.
 
@@ -81,6 +94,30 @@ konne: Korean Nested Named Entity Corpus
 - 모두의 말뭉치: <https://corpus.korean.go.kr/>
 - 국립국어원 개체명 분석 말뭉치 2020 (버전 2.0) 2022. 4. 1.
 - 국립국어원 개체명 분석 말뭉치 2021 (버전 1.0) 2022. 4. 1.
+
+## 통계
+
+다음 파일에서 개체명 주석 통계를 확인할 수 있다.
+
+- 고빈도 1000개 목록: [ne_form_label_freq_1000.tsv](docs/stat/ne_form_label_freq_1000.tsv)
+- 전체 목록: [ne_form_label_freq.tsv](docs/stat/ne_form_label_freq.tsv)
+
+컬럼은 다음과 같다.
+
+- 컬럼1 (`form`): 개체명 형태
+- 컬럼2 (`label`): 개체명 표지
+- 컬럼3 (`len`): 개체명 형태의 길이 (글자수)
+- 컬럼4 (`freq`): 개체명 빈도 (`train_freq + dev_freq`)
+- 컬럼5 (`train_freq`): train 말뭉치에서 빈도
+- 컬럼6 (`dev_freq`): dev 말뭉치에서 빈도
+- 컬럼7 (`form`)
+- 컬럼8 (`form_freq`): 개체명 형태 빈도. `form`이 동일한 항목의 `freq`의 총합
+- 컬럼9 (`label`)
+- 컬럼10 (`num_label`): 개체명 형태 `form`이 동일한 항목에 결합한 `label`의 종류의 수
+- 컬럼11 (`label_freq`): 개체명 표지 빈도. `label`이 동일한 항목의 `freq`의 총합
+
+
+
 
 ## 참고문헌
 
