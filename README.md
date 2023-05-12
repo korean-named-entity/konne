@@ -114,13 +114,13 @@ konne: Korean Nested Named Entity Corpus
 - 컬럼8 (`form_freq`): 개체명 형태 빈도. `form`이 동일한 항목의 `freq`의 총합
 - 컬럼9 (`label`)
 - 컬럼10 (`num_label`): 개체명 형태 `form`이 동일한 항목에 결합한 `label`의 종류의 수
-- 컬럼11 (`label_freq`): 개체명 표지 빈도. `label`이 동일한 항목의 `freq`의 총합
+- 컬럼11 (`label_freq`): 개체명 표지 빈도. `label`이 동일한 항목의 `freq`의 총합                   
+             
 
-
-
-
-- 정유남, 송영숙, 유현조(2023), 한국어 중첩 개체명의 말뭉치 구축 연구, 국어학-.105 : 309-344
-
+## 참고문헌
+        
+- 정유남, 송영숙, 유현조(2023), 한국어 중첩 개체명의 말뭉치 구축 연구, 국어학-.105 : 309-344               
+                     
 ```
 @inproceedings{cheong2022,
   author    = {정유남 and 송영숙 and 유현조},
