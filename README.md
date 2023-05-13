@@ -2,7 +2,29 @@ konne: Korean Nested Named Entity Corpus
 
 # 한국어 중첩 개체명 말뭉치
 
-한국어 중첩 개체명 말뭉치 `konne`는 KLUE Benchmark의 개체명 주석 말뭉치 중 공개된
+한국어 중첩 개체명 말뭉치 `konne`는 한국어 텍스트에 
+개체명(`PS` 인물, `OG` 조직, `LC` 장소), 수량 및 시간 표현
+(`QT` 수량, `TI` 시간, `DT` 날짜), 
+
+백과사전적 대상(`EV` 사건, `AF` 인공물, `PT` 식물, `AM` 동물, `MT` 물질),
+문명(`CV`) 개념(예술, 의복, 문화, 음료, 음식, 언어, 직업, 직위, 운동, 민족, 등)과
+기타 용어(`TR` 이론, `FD` 학문분야, `TM` 용어).
+
+
+
+
+This repository present the Korean Nested Named Entity (konne) corpus of named
+entities (`PS` person, `OG` organization, `LC` location), quantity and time
+expressions (`QT` quantity, `TI` time, `DT` date), and other encyclopedic
+objects (`EV` events, `AF` artifacts, `PT` plants, `AM` animals, `MT` material
+names), civilization (`CV`) concepts (art, building, clothing, culture, drink,
+food, language, occupation, postion, sports, tribe, etc) and terminologies
+(`TR` theory, `FD` field, `TM` terminology).
+
+
+
+
+KLUE Benchmark의 개체명 주석 말뭉치 중 공개된
 전체 원시 문장에서 개체명의 중첩 구조를 분석하고 150개 세분류 개체명 표지를 부착한
 말뭉치이다.
 
@@ -119,15 +141,18 @@ konne: Korean Nested Named Entity Corpus
 
 ## 참고문헌
         
-- 정유남, 송영숙, 유현조(2023), 한국어 중첩 개체명의 말뭉치 구축 연구, 국어학-.105 : 309-344               
+- 정유남, 송영숙, 유현조(2023), 한국어 중첩 개체명의 말뭉치 구축 연구, 국어학 105, 309-344. <https://doi.org/10.15811/jkl.2023..105.009>
                      
 ```
-@inproceedings{cheong2022,
+@article{CheongSongYou2023,
   author    = {정유남 and 송영숙 and 유현조},
   title     = {한국어 중첩 개체명의 말뭉치 구축 연구},
-  booktitle = {국어학},
+  journal   = {국어학},
   year      = {2023},
-  publisher = {국어학회}
+  volume    = {105},
+  pages     = {309-344},
+  publisher = {국어학회},
+  doi       = {10.15811/jkl.2023..105.009}
 }
 ```
 
